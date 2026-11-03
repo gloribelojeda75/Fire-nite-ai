@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Fire Nite AI — your AI, anywhere.">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/fire.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Fire Nite AI</title>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><img src="/fire.svg" alt=""><span>FIRE <b>NITE</b> AI</span></div>
+      <div class="top-actions">
+        <button id="install" class="quiet hidden">Install</button>
+        <button id="memory" class="quiet">Memory</button>
+      </div>
+    </header>
+    <main id="main">
+      <section id="welcome" class="welcome">
+        <div class="flame"><img src="/fire.svg" alt="Fire Nite flame"></div>
+        <p class="eyebrow">YOUR AI. YOUR WORLD.</p>
+        <h1>What’s on your mind?</h1>
+        <p class="sub">Ask anything. Create anything. Let’s get into it.</p>
+        <div class="suggestions">
+          <button>Explain something complicated simply</button>
+          <button>Help me build a game idea</button>
+          <button>Write something creative</button>
+        </div>
+      </section>
+      <section id="chat" class="chat" aria-live="polite"></section>
+    </main>
+    <form id="composer" class="composer">
+      <textarea id="prompt" rows="1" placeholder="Message Fire Nite AI…" aria-label="Message Fire Nite AI"></textarea>
+      <button id="send" type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-4 16-4-6-8-2Zm8 2 8-10" /></svg></button>
+    </form>
+    <p class="footnote">Fire Nite AI can make mistakes. Check important information.</p>
+  </div>
+  <dialog id="memoryDialog">
+    <div class="dialog-head"><h2>Saved memory</h2><button id="closeMemory" class="quiet">Close</button></div>
+    <p class="sub">Memories are saved for this browser session ID on the server.</p>
+    <div id="memoryList"></div>
+    <button id="clearMemory" class="danger">Clear saved memory</button>
+  </dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
