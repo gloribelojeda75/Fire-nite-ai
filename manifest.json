@@ -1,0 +1,15 @@
+{
+  "name": "Fire Nite AI",
+  "short_name": "Fire Nite AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff4500",
+  "icons": [
+    {
+      "src": "./Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
